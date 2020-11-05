@@ -1,0 +1,42 @@
+from time import sleep
+
+def pasword ():
+    pin=int(input("please ,enter your  account pin:"))
+    if pin == 7871:
+        print("correct account ,please wait we are checking")
+        return True
+    else:
+        print ("incorret pasword")
+        return False
+
+def atm_start():
+    balance=10000
+    print("hello welcome to gnos'S ATM")
+    if pasword():
+        print("press '1' for checking balance")
+        print("press '2' for withdraw")
+        print("press '3' for deposit")
+        print("press '4' for exiting out of ate ATM")
+
+    choose=int(input("\nchoose which money transaction fits for your day"))
+    if choose==1:
+        print("Please wait we are fetching your data..")
+        sleep(2)
+        print("Your account balance is:",balance)
+
+    elif  choose==2:
+        withdrawl=int(input("How much money do you want to withdraw from your acccount"))
+        balance=balance-withdrawl
+        print("Your account balance is :",balance)
+
+    elif choose==3:
+        deposit=int(input("How much money do you want to add money to your account"))
+        balance=balance+deposit
+        print(f"You have successfully added{deposit} money to your account")
+
+    elif choose==4:
+        print("You want to exit from ATM")
+        
+
+
+atm_start()
