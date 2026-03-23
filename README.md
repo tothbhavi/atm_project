@@ -1,2 +1,2 @@
-# atm_project
-This project describes about the how to withdraw,deposit money.
+# Blink-controlled car 
+Eye blink controlled vehicle using signal processing
