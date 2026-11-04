@@ -1,0 +1,8 @@
+# Local account data contains a PIN verifier and simulated balance.
+atm_data.json
+atm_data.json.*
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
